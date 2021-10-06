@@ -45,6 +45,6 @@ app
     });
     res.send("hello from api!");
   })
-  .listen(8080, () => {
-    console.log(`server has started on 8080`);
+  .listen(process.env.PORT || 8080, () => {
+    console.log(`server has started on ${process.env.PORT || 8080}`);
   });
